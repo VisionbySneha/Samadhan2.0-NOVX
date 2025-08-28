@@ -1,0 +1,20 @@
+const student = {
+  fullName:'Ruby Mishra',
+  age:21,
+  rollno:35,
+  courseName:"Computer Science",
+  semester:'fifth',
+  year:'third'
+};
+
+console.log("Student Details:");
+console.log("Name:",student.fullName);
+console.log("Age:",student.age);
+console.log("Rollno:",student.rollno);
+console.log("CourseName:",student.courseName);
+console.log("Semester:",student.semester);
+console.log("Year:",student.year);
+
+
+
+
