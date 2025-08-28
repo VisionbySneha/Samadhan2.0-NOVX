@@ -1,0 +1,11 @@
+function highestMarks(marks) {
+  let highest = marks[0];
+  for (let mark of marks) {
+    if (mark > highest) {
+      highest = mark;
+    }
+  }
+  return highest;
+}
+
+console.log(highestMarks([35, 69, 32, 99, 50, 94, 43, 18, 61]));
