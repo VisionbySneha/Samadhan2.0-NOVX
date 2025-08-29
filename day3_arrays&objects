@@ -1,0 +1,48 @@
+const students = [
+  {
+    name: "Priya",
+    details: { rollNo: 101, course: "CS" },
+    marks: [85, 90, 78]
+  },
+  {
+    name: "Suraj",
+    details: { rollNo: 102, course: "CS" },
+    marks: [92, 88, 95]
+  },
+  {
+    name: "Amit",
+    details: { rollNo: 103, course: "IT" },
+    marks: [70, 75, 80]
+  },
+  {
+    name: "Karun",
+    details: { rollNo: 104, course: "IT" },
+    marks: [88, 82, 91]
+  }
+];
+
+// ✅ map → Calculate total & average for each student
+const allTotals = students.map(student => {
+  const total = student.marks.reduce((sum, m) => sum + m, 0);
+  const average = total / student.marks.length;
+  return {
+    ...student,
+    total,
+    average
+  };
+});
+
+console.log("All Students with Total & Average:");
+console.log(allTotals);
+
+
+const toppers = allTotals.filter(student => student.average >= 85);
+console.log("\nToppers (average >= 85):");
+console.log(toppers);
+
+
+const bestStudent = allTotals.reduce((topper, student) => {
+  return student.average > topper.average ? student : topper;
+});
+console.log("\nBest Student:");
+console.log(bestStudent);
