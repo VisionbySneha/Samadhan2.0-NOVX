@@ -7,3 +7,4 @@ This repository contains the presentation for MeritCore,an AI-driven platform de
 ##Presentation
 You can view the presentation directly in your browser
 This is our presentation link:-  https://drive.google.com/file/d/1JNDmfoHLJ0IKWgmijrHo8SU5Cf8pOCsm/view?usp=drivesdk
+[Click here to view the presenation PDF](./TEAM NOVX.pdf)
